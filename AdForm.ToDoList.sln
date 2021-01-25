@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdForm.ToDoList", "AdForm.ToDoList\AdForm.ToDoList.Api\AdForm.ToDoList.Api.csproj", "{CAD7F0D6-D829-4186-8652-8AF0328C6282}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdForm.ToDoList.Api", "AdForm.ToDoList\AdForm.ToDoList.Api\AdForm.ToDoList.Api.csproj", "{CAD7F0D6-D829-4186-8652-8AF0328C6282}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdForm.ToDoList.Application", "AdForm.ToDoList\AdForm.ToDoList.Application\AdForm.ToDoList.Application.csproj", "{DAAFDCB3-D040-4DA1-8732-D304B1674F69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CAD7F0D6-D829-4186-8652-8AF0328C6282}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAD7F0D6-D829-4186-8652-8AF0328C6282}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAD7F0D6-D829-4186-8652-8AF0328C6282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAAFDCB3-D040-4DA1-8732-D304B1674F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAAFDCB3-D040-4DA1-8732-D304B1674F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAAFDCB3-D040-4DA1-8732-D304B1674F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAAFDCB3-D040-4DA1-8732-D304B1674F69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
