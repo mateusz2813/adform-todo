@@ -1,3 +1,5 @@
+using AdForm.ToDoList.Application.List.Command;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +21,7 @@ namespace AdForm.ToDoList
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddMediatR(typeof(CreateListCommand).Assembly);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
