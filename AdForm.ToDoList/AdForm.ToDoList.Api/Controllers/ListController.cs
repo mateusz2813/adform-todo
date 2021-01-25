@@ -24,26 +24,26 @@ namespace AdForm.ToDoList.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<ListResponse>> GetAsync(GetListQuery query)
+        public async Task<ActionResult<ListResponse>> GetAsync([FromQuery] GetListQuery query)
         {
-            return await _mediator.Send(query);
+            return Ok(await _mediator.Send(query));
         }
 
         [HttpPost]
-        public async Task<ActionResult<ListResponse>> PostAsync(CreateListCommand command)
+        public async Task<ActionResult<ListResponse>> PostAsync([FromBody] CreateListCommand command)
         {
-            return await _mediator.Send(command);
+            return Ok(await _mediator.Send(command));
         }
 
         [HttpPut]
-        public async Task<ActionResult<ListResponse>> PutAsync(UpdateListCommand command)
+        public async Task<ActionResult<ListResponse>> PutAsync([FromBody] UpdateListCommand command)
         {
             await _mediator.Send(command);
             return NoContent();
         }
 
         [HttpDelete]
-        public async Task<ActionResult<ListResponse>> DeleteAsync(DeleteListCommand command)
+        public async Task<ActionResult<ListResponse>> DeleteAsync([FromBody] DeleteListCommand command)
         {
             await _mediator.Send(command);
             return NoContent();
